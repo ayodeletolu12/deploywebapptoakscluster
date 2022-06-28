@@ -22,7 +22,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+#      vmImage: ubuntu-latest
+      name: Self-hosted-AgentPool
     steps:
     - task: Docker@2
       displayName: Build an image
