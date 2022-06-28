@@ -29,7 +29,7 @@ stages:
       inputs:
         containerRegistry: 'ACR'
         repository: '$(imageRepo)'
-        command: 'build'
+        command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
